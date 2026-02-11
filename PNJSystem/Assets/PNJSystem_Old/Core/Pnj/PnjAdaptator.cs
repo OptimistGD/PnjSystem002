@@ -13,7 +13,7 @@ namespace PNJSystem.Core
     {
         [SerializeField] 
         private ProfessionData professionData;
-        private static PnjManager pnj;
+        private static PnjController pnj;
         
         // Le code qui reçoit cette liste IEnumerable ne peut QUE la lire 
         //Ici, prend le liste et l'assigne au PNJ

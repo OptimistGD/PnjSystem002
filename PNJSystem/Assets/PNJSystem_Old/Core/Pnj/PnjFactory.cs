@@ -8,7 +8,7 @@ namespace PNJSystem.Core
     //assigne une data profession au PNJ et ces items
     public static class PnjFactory
     {
-        public static PnjManager Create(ProfessionData data)
+        public static PnjController Create(ProfessionData data)
         {
             //Debug.Log($"[Factory] Profession : {data.description}");
             //Debug.Log($"[Factory] StartingItems COUNT = {data.startingItems?.Count}");
@@ -27,7 +27,7 @@ namespace PNJSystem.Core
                 return new Item(i.id, i.description);
             });
 
-            return new PnjManager(new Profession(data.id, data.description), new PnjInventory(items));
+            return new PnjController(new Profession(data.id, data.description), new PnjInventory(items));
         }
     }
 }

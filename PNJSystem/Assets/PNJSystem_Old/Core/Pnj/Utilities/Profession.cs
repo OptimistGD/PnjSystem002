@@ -6,7 +6,6 @@
         public ProfessionId Id { get; }
 
         string IProfession.Description => description;
-        
 
         public Profession(ProfessionId id, string description)
         {

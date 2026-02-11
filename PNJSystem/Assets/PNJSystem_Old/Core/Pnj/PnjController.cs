@@ -5,13 +5,13 @@ using UnityEngine;
 
 namespace PNJSystem.Core
 {
-    public class PnjManager
+    public class PnjController
     {
         private readonly IProfession profession;
         private readonly PnjInventory inventory;
         
         
-        public PnjManager(IProfession profession, PnjInventory inventory)
+        public PnjController(IProfession profession, PnjInventory inventory)
         {
             this.profession = profession;
             this.inventory = inventory;
