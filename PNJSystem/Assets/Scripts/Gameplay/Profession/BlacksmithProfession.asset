@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32bd20645fc243b0aa506dbb6d4dcad5, type: 3}
+  m_Name: BlacksmithProfession
+  m_EditorClassIdentifier: PNJSystem.Core::PNJSystem.Core.ProfessionData
+  id: 0
+  description: Forgeron
+  startingItems:
+  - {fileID: 11400000, guid: 48a9722bca6aaf84980f3245d0bfbe0d, type: 2}
+  - {fileID: 11400000, guid: eed56742208f53845bf44f7624496862, type: 2}

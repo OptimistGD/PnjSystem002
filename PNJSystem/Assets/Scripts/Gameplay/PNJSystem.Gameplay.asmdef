@@ -1,0 +1,16 @@
+{
+    "name": "PNJSystem.Gameplay",
+    "rootNamespace": "PNJSystem.Gameplay",
+    "references": [
+        "GUID:ca2f482e482b5164ab78c9183c1d89df"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
