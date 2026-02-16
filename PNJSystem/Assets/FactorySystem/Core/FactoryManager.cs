@@ -9,6 +9,8 @@ namespace FactorySystem.Core
     public class FactoryManager : MonoBehaviour
     {
         //singleton
+        //Instance = instance de FactoryManager
+        //instance = instance quelquonque
         public static FactoryManager Instance
         {
             get
@@ -20,7 +22,6 @@ namespace FactorySystem.Core
                     
                     DontDestroyOnLoad(instance);
                 }
-                
                 return instance;
             }
         }

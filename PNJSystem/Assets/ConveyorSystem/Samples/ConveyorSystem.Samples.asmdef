@@ -1,7 +1,9 @@
 {
-    "name": "FactorySystem.Core",
-    "rootNamespace": "FactorySystem.Core",
-    "references": ["GUID:0236baad80166614e94c041d8b7cc284"],
+    "name": "ConveyorSystem.Samples",
+    "rootNamespace": "ConveyorSystem.Samples",
+    "references": [
+        "GUID:0236baad80166614e94c041d8b7cc284"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

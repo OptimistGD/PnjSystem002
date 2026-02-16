@@ -1,4 +1,6 @@
-﻿namespace FactorySystem.Core.Items
+﻿using UnityEngine;
+
+namespace FactorySystem.Core.Items
 {
     public interface IFactoryItem
     {

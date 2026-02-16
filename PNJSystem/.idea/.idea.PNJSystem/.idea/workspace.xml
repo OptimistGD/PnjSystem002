@@ -5,84 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c0720b9-a108-4b75-87d9-260fdc77294b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/FactoryManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/FactoryManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/IFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/IFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/FactoryItemData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/FactoryItemData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IFactoryItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IFactoryItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoFactoryItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoFactoryItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PNJSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PNJSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/PlayerInventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/PlayerInventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Items.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Items/Item.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Items/Item.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Items/ItemData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Items/ItemData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PNJSystem.Core.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PNJSystem.Core.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjAdaptator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjAdaptator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjInventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjInventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/PnjUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/IProfession.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/IProfession.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/Profession.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/Profession.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/ProfessionData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/ProfessionData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/ProfessionId.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Pnj/Utilities/ProfessionId.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Editor/PnjAdaptatorEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Editor/PnjAdaptatorEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Editor/PnjEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Editor/PnjEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Items.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Items/Hoe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Items/Hoe.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Items/Sword.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Items/Sword.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PNJSystem.Gameplay.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PNJSystem.Gameplay.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession/BlacksmithProfession.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession/BlacksmithProfession.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession/FarmerProfession.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession/FarmerProfession.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession/PriestProfession.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Profession/PriestProfession.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/SampleSystemPNJ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/SampleSystemPNJ/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/SampleSystemPNJ/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/FactoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/FactoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/FactorySystem.Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/FactorySystem.Core.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IFactoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IFactoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/FactorySystem.Samples.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/FactorySystem.Samples.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/MerchantSampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/MerchantSampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/Fruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/Fruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Inventory.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Inventory/PlayerInventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Inventory/PlayerInventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Items/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Items/Item.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Items/ItemData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Items/ItemData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/PNJSystem.Core.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/PNJSystem.Core.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjAdaptator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjAdaptator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjFactory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjInventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjInventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/PnjUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/IProfession.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/IProfession.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/Profession.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/Profession.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/ProfessionData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/ProfessionData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/ProfessionId.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Core/Pnj/Utilities/ProfessionId.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor/PNJSystem.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor/PNJSystem.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor/PnjAdaptatorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor/PnjAdaptatorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor/PnjEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Editor/PnjEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Items/Hoe.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Items/Hoe.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Items/Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Items/Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/PNJSystem.Samples.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/PNJSystem.Samples.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession/BlacksmithProfession.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession/BlacksmithProfession.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession/FarmerProfession.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession/FarmerProfession.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession/PriestProfession.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/Profession/PriestProfession.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/SampleSystemPNJ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/SampleSystemPNJ/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PNJSystem_Old/Samples/SampleSystemPNJ/SampleScene.unity.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +80,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/ConveyorSystem/Core/ConveyorItems/IConveyorItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ConveyorSystem/Core/ConveyorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/FactoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/IFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,11 +89,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IFactoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoFactoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Fruit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/FruitData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/FruitMerchant.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/MonoFactoryFruit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/MonoFruitMerchant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConveyorManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -121,23 +106,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeInspectionSettingsId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.2.7f2\Editor\Unity.exe" />
@@ -210,7 +195,13 @@
       <workItem from="1770726559807" duration="17019000" />
       <workItem from="1770810043420" duration="1581000" />
       <workItem from="1770811721141" duration="1806000" />
-      <workItem from="1770815525303" duration="7934000" />
+      <workItem from="1770815525303" duration="10530000" />
+      <workItem from="1770898533566" duration="1954000" />
+      <workItem from="1770901741009" duration="7893000" />
+      <workItem from="1771082895191" duration="5461000" />
+      <workItem from="1771232736023" duration="1534000" />
+      <workItem from="1771255272492" duration="4398000" />
+      <workItem from="1771261225810" duration="3268000" />
     </task>
     <servers />
   </component>

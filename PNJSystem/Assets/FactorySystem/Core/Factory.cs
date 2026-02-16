@@ -22,6 +22,7 @@ namespace FactorySystem.Core
         
         private List<T> createdItems = new List<T>();
 
+        
         public virtual void UpdateFactory(float elapsedTime)
         {
             RemainingTimeUntilNextProduct -= elapsedTime * Efficiency;
