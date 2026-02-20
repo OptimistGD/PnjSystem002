@@ -8,17 +8,21 @@ namespace FactorySystem.Samples.Merchants
     [Serializable]
     public class FruitMerchant : Factory<Fruit>
     {
-        [field: SerializeField]
-        public FruitData FruitData { get; private set; }
+        private FactoryItemData itemData;
         
+        public FruitMerchant(FactoryItemData data)
+        {
+            itemData = data;
+        }
+
         protected override Fruit CreateItem()
         {
-            return new Fruit(FruitData);
+            return new Fruit(itemData);
         }
 
         protected override FactoryItemData GetProductData()
         {
-            return FruitData;
+            return itemData;
         }
     }
 }

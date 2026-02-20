@@ -1,65 +1,81 @@
 ﻿using System;
 using System.Collections.Generic;
+using FactorySystem.Core.Doors;
 using FactorySystem.Core.Items;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace FactorySystem.Core
 {
-    public abstract class MonoFactory<T> : MonoBehaviour 
-        where T : IFactoryItem
+    //Mono = View = lien entre logic et UI
+    //abstraite et générique en T => ? type d'item
+    public abstract class MonoFactory<T> : MonoBehaviour where T : IFactoryItem
     {
-        public Factory<T> Factory { get; protected set; }
-
-        [SerializeField]
-        private Transform container;
-        [SerializeField]
-        private MonoFactoryItem<T> factoryItemPrefab;
-
-        private Dictionary<T, MonoFactoryItem<T>> items = new();
+        // [SerializeReference] => Unity a besoin de coco le vrai factory
+        [SerializeReference]
+        private Factory<T> factory;
         
+        private FactoryManager factoryManager;
+        
+        [SerializeField]
+        private List<MonoBehaviour> outputObjects;
+        
+        protected Factory<T> FactoryLogic => factory;
+
         private void Awake()
         {
-            Factory =  CreateFactory();
+            if (factory == null)
+            {
+                factory = CreateFactory();
+            }
+            
+            ConnectOutputs();
         }
 
-        private void OnEnable()
+        private void Update()
         {
-            FactoryManager.Instance.AddFactory(Factory);
+            if (factory == null)
+            {
+                Debug.LogError("[MonoFactory] _factory est null ! Assigne-la dans l'Inspector ou implémente CreateFactory().");
+                return;
+            }
             
-            Factory.OnItemCreated += FactoryOnItemCreated;
-            Factory.OnItemRemoved += FactoryOnItemRemoved;
+            factory.UpdateFactory(Time.deltaTime);
         }
         
-        private void OnDisable()
-        {
-            FactoryManager.Instance.RemoveFactory(Factory);
-            
-            Factory.OnItemCreated -= FactoryOnItemCreated;
-            Factory.OnItemRemoved -= FactoryOnItemRemoved;
-        }
-
         protected abstract Factory<T> CreateFactory();
         
-        private void FactoryOnItemCreated(T item)
+        private void ConnectOutputs()
         {
-            if(items.ContainsKey(item))
-                return;
-            
-            MonoFactoryItem<T> instance = Instantiate(factoryItemPrefab, container);
-            instance.Connect(item);
-            
-            items.Add(item, instance);
-        }
-        
-        private void FactoryOnItemRemoved(T item)
-        {
-            if (items.TryGetValue(item, out MonoFactoryItem<T> instance))
+            foreach (MonoBehaviour obj in outputObjects)
             {
-                items.Remove(item);
-                instance.Disconnect(item);
-                
-                Destroy(instance.gameObject);
+                // "as" tente une conversion : si l'objet n'est pas un IItemInput<T>,
+                // la variable "input" vaudra null et on ignore cet objet.
+                IItemInput<T> input = obj as IItemInput<T>;
+
+                if (input != null)
+                {
+                    factory.AddOutput(input);
+                }
+                else
+                {
+                    Debug.LogWarning($"[MonoFactory] {obj.name} n'implémente pas IItemInput<T>. Ignoré.");
+                }
             }
+        }
+        //connecter
+        public void AddOutput(MonoBehaviour obj)
+        {
+            IItemInput<T> input = obj as IItemInput<T>;
+            if (input != null)
+                factory.AddOutput(input);
+        }
+        //déconnecter
+        public void RemoveOutput(MonoBehaviour obj)
+        {
+            IItemInput<T> input = obj as IItemInput<T>;
+            if (input != null)
+                factory.RemoveOutput(input);
         }
     }
 }

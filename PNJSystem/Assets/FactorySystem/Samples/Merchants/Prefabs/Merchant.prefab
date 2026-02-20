@@ -340,7 +340,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4049323453352113686}
-  - component: {fileID: 7756122081570195433}
   m_Layer: 0
   m_Name: Merchant
   m_TagString: Untagged
@@ -366,22 +365,3 @@ Transform:
   - {fileID: 3477218712347174533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7756122081570195433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8057121827439229300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42bc84921fc4e1aa3658ee93da9c261, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FactorySystem.Samples::FactorySystem.Samples.Merchants.MonoFruitMerchant
-  container: {fileID: 2493695827823639165}
-  factoryItemPrefab: {fileID: 7108742634130965798, guid: 2e9c5af7dcb20c04392893b65c302848, type: 3}
-  merchant:
-    <Efficiency>k__BackingField: 1
-    <MaxItemQuantity>k__BackingField: 1
-    <FruitData>k__BackingField: {fileID: 11400000, guid: 9be3e353a90671249adb37f423a2b6fc, type: 2}
-  fruitName: {fileID: 8641298817911861323}

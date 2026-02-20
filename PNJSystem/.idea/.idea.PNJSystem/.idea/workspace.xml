@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c0720b9-a108-4b75-87d9-260fdc77294b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/ConveyorSystem/Core/Conveyor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ConveyorSystem/Core/Conveyor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ConveyorSystem/Core/MonoConveyor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ConveyorSystem/Core/MonoConveyor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemOutput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemOutput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/IItemProducer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/IItemProducer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/ItemReceiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/ItemReceiver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitConveyorBelt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitConveyorBelt.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitsReceiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitsReceiver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PNJSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PNJSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Conveyor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Conveyor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoConveyor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoConveyor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/FruitItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/FruitItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Merchant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Merchant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitMerchant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitMerchant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFactoryFruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFactoryFruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFruitMerchant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFruitMerchant.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +40,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ConveyorSystem/Core/ConveyorItems/IConveyorItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ConveyorSystem/Core/ConveyorManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemOutput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/FactoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/IFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/IItemProducer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/ItemReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Items/FactoryItemData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IFactoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoFactoryItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitConveyorBelt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/FruitsReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConveyorManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
