@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3332504620979323184}
-  - component: {fileID: 2531346877139859289}
   - component: {fileID: 7108742634130965798}
+  - component: {fileID: 7814011380256178507}
   m_Layer: 0
   m_Name: FruitItem
   m_TagString: Untagged
@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 7990963067007227704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -37,7 +37,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &2531346877139859289
+--- !u!114 &7108742634130965798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990963067007227704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b81e530864241f688f81fd313f86a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FactorySystem.Samples::FactorySystem.Samples.Merchants.MonoFactoryFruit
+  factory:
+    rid: -2
+  outputObjects: []
+  _itemData: {fileID: 11400000, guid: 9be3e353a90671249adb37f423a2b6fc, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!212 &7814011380256178507
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,35 +105,14 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7287315983450257038, guid: 61d9d34a069678f42be66773bdfd696e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7108742634130965798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7990963067007227704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b81e530864241f688f81fd313f86a3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FactorySystem.Samples::FactorySystem.Samples.Merchants.MonoFactoryFruit
-  factory:
-    rid: -2
-  outputObjects: []
-  _itemData: {fileID: 11400000, guid: 9be3e353a90671249adb37f423a2b6fc, type: 2}
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }

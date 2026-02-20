@@ -28,6 +28,7 @@ namespace FactorySystem.Core
             {
                 factory = CreateFactory();
             }
+            factory.Initialize();
             
             ConnectOutputs();
         }

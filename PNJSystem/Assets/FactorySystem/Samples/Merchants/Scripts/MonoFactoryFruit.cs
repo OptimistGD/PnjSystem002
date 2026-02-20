@@ -10,18 +10,18 @@ namespace FactorySystem.Samples.Merchants
         //barre de progression, etc
         
         [SerializeField]
-        private FactoryItemData _itemData;
+        private FactoryItemData itemData;
 
         protected override Factory<Fruit> CreateFactory()
         {
-            // On vérifie que _itemData est bien assigné avant de créer la factory.
-            if (_itemData == null)
+            // On vérifie que itemData est bien assigné avant de créer la factory.
+            if (itemData == null)
             {
-                Debug.LogError("[MonoTestFactory] _itemData non assigné dans l'Inspector !");
+                Debug.LogError("[MonoFactoryFruit] itemData non assigné dans l'Inspector !");
                 return null;
             }
 
-            return new FruitMerchant(_itemData);
+            return new FruitMerchant(itemData);
         }
     }
 }

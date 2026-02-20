@@ -40,6 +40,7 @@ public abstract class ConveyorBelt<T> : MonoBehaviour, IItemInput<T>, IItemOutpu
     {
         if (!Outputs.Contains(input))
             Outputs.Add(input);
+        
     }
     public void RemoveOutput(IItemInput<T> input)
     {
@@ -69,11 +70,8 @@ public abstract class ConveyorBelt<T> : MonoBehaviour, IItemInput<T>, IItemOutpu
         {
             var (obj, destination, item) = itemsInTransit[i];
 
-            obj.transform.position = Vector3.MoveTowards(
-                obj.transform.position,
-                destination,
-                speed * Time.deltaTime
-            );
+            obj.transform.position = Vector3.MoveTowards(obj.transform.position, destination,
+                speed * Time.deltaTime);
 
             if (Vector3.Distance(obj.transform.position, destination) < 0.01f)
                 arrived.Add((obj, destination, item));
@@ -82,8 +80,9 @@ public abstract class ConveyorBelt<T> : MonoBehaviour, IItemInput<T>, IItemOutpu
         foreach (var (obj, destination, item) in arrived)
         {
             itemsInTransit.Remove((obj, destination, item));
-            OnItemArrived(obj);
             SendItem(item);
+            OnItemArrived(obj);
+            
             if (Outputs.Count == 0)
                 Destroy(obj);
         }

@@ -17,14 +17,21 @@ namespace FactorySystem.Core
         public event Action<T> OnItemCreated;
         public event Action<T> OnItemRemoved;
 
-        [field: SerializeField] public float Efficiency { get; protected set; } = 1;
-        [field: SerializeField] public int MaxItemQuantity { get; protected set; } = 1;
+        [field: SerializeField] public float Efficiency { get; protected set; } = 5;
+        [field: SerializeField] public int MaxItemQuantity { get; protected set; } = 5;
 
         public float RemainingTimeUntilNextProduct { get; private set; }
         public List<IFactoryItem> ItemsList { get; } = new List<IFactoryItem>();
 
         //List avec les Outputs
         public List<IItemInput<T>> Outputs { get; } = new List<IItemInput<T>>();
+        
+        
+        public void Initialize()
+        {
+            RemainingTimeUntilNextProduct = GetProductData().ProductionDuration;
+        }
+        
         
         public void AddOutput(IItemInput<T> input)
         {
@@ -47,6 +54,7 @@ namespace FactorySystem.Core
         public virtual void UpdateFactory(float elapsedTime)
         {
             RemainingTimeUntilNextProduct -= elapsedTime * Efficiency;
+            
             if (RemainingTimeUntilNextProduct > 0)
                 return;
 
