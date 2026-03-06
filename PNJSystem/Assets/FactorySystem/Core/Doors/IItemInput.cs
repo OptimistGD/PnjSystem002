@@ -8,5 +8,7 @@ namespace FactorySystem.Core.Doors
         //envoie un item à cet objet.
         //ConveyorBelt => instancier l'item
         void ReceiveItem(T item);
+        
+        bool CanReceiveItem { get; }
     }
 }

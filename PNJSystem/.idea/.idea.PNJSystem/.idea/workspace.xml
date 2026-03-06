@@ -5,28 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c0720b9-a108-4b75-87d9-260fdc77294b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemStorage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoItemStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoItemStorage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFruitStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFruitStorage.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PNJSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PNJSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Conveyor/ConveyorBelt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Conveyor/ConveyorBelt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Doors/IItemInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Factory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/IItemProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IItemProducer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/IItemProducer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/IItemProducer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/ItemReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/ItemReceiver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemReceiver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/IFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/IFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemReceiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/ItemStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoItemStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/Items/MonoItemStorage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Core/MonoFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/MerchantSampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/MerchantSampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Apple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Apple.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Banana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Banana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/FruitItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/FruitItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Merchant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Prefabs/Merchant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scriptables/Pomme.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scriptables/Pomme.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFactoryFruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scripts/MonoFactoryFruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scriptables/Banane.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scriptables/Banane.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scriptables/NewPomme.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FactorySystem/Samples/Merchants/Scriptables/NewPomme.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +161,9 @@
       <workItem from="1771255272492" duration="4398000" />
       <workItem from="1771261225810" duration="3268000" />
       <workItem from="1771581100973" duration="8612000" />
+      <workItem from="1771766099259" duration="4970000" />
+      <workItem from="1772095211237" duration="6505000" />
+      <workItem from="1772102190079" duration="2622000" />
     </task>
     <servers />
   </component>

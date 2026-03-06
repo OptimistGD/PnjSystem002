@@ -16,7 +16,9 @@ namespace FactorySystem.Core
             
             OnItemReceived(item);
         }
-        
+
+        public bool CanReceiveItem { get; }
+
         protected abstract void OnItemReceived(T item);
     }
 }

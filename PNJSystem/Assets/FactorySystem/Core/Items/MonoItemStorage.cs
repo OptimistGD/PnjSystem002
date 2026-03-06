@@ -8,12 +8,13 @@ namespace FactorySystem.Core.Items
     public abstract class MonoItemStorage<T> : MonoBehaviour, IItemInput<T> where T : IFactoryItem
     {
         [SerializeReference] private ItemStorage<T> storage = new ItemStorage<T>();
-        
         [SerializeField] private GameObject itemPrefab;
         [SerializeField] private RectTransform container;
         
-        
+        [SerializeField]
+        private List<MonoBehaviour> connectedFactories;
         public ItemStorage<T> Storage => storage;
+        public bool CanReceiveItem => !storage.IsFull;
 
         // Dictionnaire qui lie chaque item logique à son GameObject UI.
         // Cela nous permet de retrouver et supprimer le bon visuel
@@ -24,11 +25,13 @@ namespace FactorySystem.Core.Items
         {
             storage.OnItemAdded += OnItemAdded;
             storage.OnItemRemoved += OnItemRemoved;
+            storage.OnSlotFree += OnSlotFree;
         }
         private void OnDestroy()
         {
             storage.OnItemAdded -= OnItemAdded;
             storage.OnItemRemoved -= OnItemRemoved;
+            storage.OnSlotFree += OnSlotFree;
         }
         
         
@@ -60,6 +63,24 @@ namespace FactorySystem.Core.Items
                 itemInView.Remove(item);
             }
         }
+        private void OnSlotFree()
+        {
+            foreach (MonoBehaviour obj in connectedFactories)
+            {
+                // On tente de caster en Factory<T> pour appeler TryDispatchNextWaitingItem
+                // "is" vérifie le type sans planter si ça ne correspond pas
+                if (obj is MonoFactory<T> monoFactory)
+                {
+                    monoFactory.FactoryLogic.TryDispatchNextWaitingItem();
+                }
+                else
+                {
+                    Debug.LogWarning($"[MonoItemStorage] {obj.name} n'est pas un MonoFactory<T>. Ignoré.");
+                }
+            }
+        }
+        
+        
 
         // Méthode abstraite => enfant gère propre SetupItemUI
         protected abstract void SetupItemUI(T item, GameObject itemView);

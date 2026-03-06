@@ -22,6 +22,9 @@ namespace FactorySystem.Core.Items
         //event => remove
         public event Action<T> OnItemRemoved;
         
+        //event => place dans storage
+        public event Action OnSlotFree;
+        
         
         public bool TryAddItem(T item)
         {
@@ -43,6 +46,8 @@ namespace FactorySystem.Core.Items
 
             itemsInStorage.Remove(item);
             OnItemRemoved?.Invoke(item);
+            
+            OnSlotFree?.Invoke();
             return true;
         }
     }

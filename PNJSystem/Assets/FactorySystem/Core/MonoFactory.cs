@@ -14,13 +14,21 @@ namespace FactorySystem.Core
         // [SerializeReference] => Unity a besoin de coco le vrai factory
         [SerializeReference]
         private Factory<T> factory;
-        
-        private FactoryManager factoryManager;
-        
         [SerializeField]
         private List<MonoBehaviour> outputObjects;
+        [SerializeField]
+        private RectTransform waitingLayoutContainer;
+        [SerializeField]
+        private GameObject itemUIPrefab;
         
-        protected Factory<T> FactoryLogic => factory;
+        [SerializeField, Min(1)] private int maxItemQuantity = 1;
+        [SerializeField, Min(0.1f)] private float productionDuration = 5f;
+        
+        private FactoryManager factoryManager;
+
+        public Factory<T> FactoryLogic => factory;
+        
+        private Dictionary<T, GameObject> waitingUIObjects = new Dictionary<T, GameObject>();
 
         private void Awake()
         {
@@ -28,7 +36,11 @@ namespace FactorySystem.Core
             {
                 factory = CreateFactory();
             }
+            factory.SetParameters(maxItemQuantity, productionDuration);
             factory.Initialize();
+            
+            factory.OnItemWaiting += OnItemWaiting;
+            factory.OnItemDispatched += OnItemDispatched;
             
             ConnectOutputs();
         }
@@ -44,6 +56,37 @@ namespace FactorySystem.Core
             factory.UpdateFactory(Time.deltaTime);
         }
         
+        /*
+        private void OnItemCreated(T item)
+        {
+            if (itemUIPrefab == null || waitingLayoutContainer == null)
+                return;
+
+            GameObject uiObject = Instantiate(itemUIPrefab, waitingLayoutContainer);
+            waitingUIObjects[item] = uiObject;
+            SetupItemUI(item, uiObject);
+        }
+        */
+        private void OnItemWaiting(T item)
+        {
+            if (itemUIPrefab == null || waitingLayoutContainer == null)
+                return;
+
+            GameObject uiObject = Instantiate(itemUIPrefab, waitingLayoutContainer);
+            waitingUIObjects[item] = uiObject;
+            SetupItemUI(item, uiObject);
+        }
+        // NOUVEAU : quand un item part vers le conveyor, on retire son visuel
+        private void OnItemDispatched(T item)
+        {
+            if (waitingUIObjects.TryGetValue(item, out GameObject uiObject))
+            {
+                Destroy(uiObject);
+                waitingUIObjects.Remove(item);
+            }
+        }
+        
+        protected virtual void SetupItemUI(T item, GameObject uiObject) { }
         protected abstract Factory<T> CreateFactory();
         
         private void ConnectOutputs()

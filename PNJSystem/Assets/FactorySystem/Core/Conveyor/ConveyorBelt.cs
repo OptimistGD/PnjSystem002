@@ -8,16 +8,43 @@ using UnityEngine.Serialization;
 
 public abstract class ConveyorBelt<T> : MonoBehaviour, IItemInput<T>, IItemOutput<T> where T : IFactoryItem
 {
+    private struct ItemsInTransit
+    {
+        public GameObject Obj;
+        
+        public Vector3 CurrentPosition;
+        public Vector3 Destination;
+        public float DistanceBetween;
+        
+        public T Item;
+    }
+    
+    
     [SerializeField] private GameObject itemPrefab;
-    
     [SerializeField] private Transform spawnPoint;
-    
     [SerializeField] private float speed = 1f;
     
+    [SerializeField]
+    private List<MonoBehaviour> outputObjects;
     public List<IItemInput<T>> Outputs { get; } = new List<IItemInput<T>>();
-    
-    private List<(GameObject obj, Vector3 destination, T item)> itemsInTransit = new();
-    
+
+    private List<ItemsInTransit> itemsInTransit = new();
+    private List<ItemsInTransit> itemsArrived = new();
+
+    private void Awake()
+    {
+        ConnectOutputs();
+    }
+    private void ConnectOutputs()
+    {
+        foreach (MonoBehaviour obj in outputObjects)
+        {
+            if (obj is IItemInput<T> input)
+                Outputs.Add(input);
+            else
+                Debug.LogWarning($"[ConveyorBelt] {obj.name} n'implémente pas IItemInput<T>. Ignoré.");
+        }
+    }
     
     public void ReceiveItem(T item)
     {
@@ -30,7 +57,8 @@ public abstract class ConveyorBelt<T> : MonoBehaviour, IItemInput<T>, IItemOutpu
         
         GameObject spawnedObject = Instantiate(itemPrefab, spawnPoint.position, Quaternion.identity);
         
-        itemsInTransit.Add((spawnedObject, GetEndPoint(), item));
+        //itemsInTransit.Add((spawnedObject, GetEndPoint(), item));
+        itemsInTransit.Add(new ItemsInTransit());
         
         OnItemReceived(item, spawnedObject);
     }
@@ -52,40 +80,63 @@ public abstract class ConveyorBelt<T> : MonoBehaviour, IItemInput<T>, IItemOutpu
         foreach (IItemInput<T> output in Outputs)
             output.ReceiveItem(item);
     }
+    public bool CanReceiveItem
+    {
+        get
+        {
+            if (Outputs.Count == 0)
+                return true;
+
+            // On vérifie que tous les outputs peuvent recevoir
+            foreach (IItemInput<T> output in Outputs)
+            {
+                if (output.CanReceiveItem)
+                    return true;
+            }
+            return false;
+        }
+    }
     
 
     private void Update()
     {
         MoveItems();
     }
-
+    
     // ReSharper disable Unity.PerformanceAnalysis
     private void MoveItems()
     {
-        List<(GameObject, Vector3, T)> arrived = new();
-
-        // On stocke aussi le item logique avec le GameObject
-        // pour pouvoir l'envoyer aux outputs à l'arrivée.
-        for (int i = 0; i < itemsInTransit.Count; i++)
+        //int = pas changer => INITIALISATION
+        // i = index 
+        // Count = Length => max de la liste 
+        //i++ => rajout de 1
+        for (var i = 0; i < itemsInTransit.Count; i++)
         {
-            var (obj, destination, item) = itemsInTransit[i];
-
-            obj.transform.position = Vector3.MoveTowards(obj.transform.position, destination,
+            // var => définit temporairement la liste des i
+            ItemsInTransit itemsMoving = itemsInTransit[i];
+            
+            
+            //Obj = GameObject => récupère posiiton Vector3 du GameObject (.transform.position)
+            itemsMoving.Obj.transform.position = Vector3.MoveTowards(itemsMoving.CurrentPosition,
+                itemsMoving.Destination,
                 speed * Time.deltaTime);
 
-            if (Vector3.Distance(obj.transform.position, destination) < 0.01f)
-                arrived.Add((obj, destination, item));
-        }
+            itemsMoving.DistanceBetween = (itemsMoving.CurrentPosition - itemsMoving.Destination).sqrMagnitude;
+            //comme Distance = valeur au carré, alors, sqrMagnitude => calcul sans carré
+            if (itemsMoving.DistanceBetween < 0.01f)
+            {
+                itemsArrived.Add(itemsMoving);
+                SendItem(itemsMoving.Item);
 
-        foreach (var (obj, destination, item) in arrived)
-        {
-            itemsInTransit.Remove((obj, destination, item));
-            SendItem(item);
-            OnItemArrived(obj);
+
+                OnItemArrived(itemsMoving.Obj);
+                Destroy(itemsMoving.Obj);
+            }
             
-            if (Outputs.Count == 0)
-                Destroy(obj);
+            itemsInTransit[i] = itemsMoving;
         }
+        
+        itemsInTransit.RemoveAll(ctx => ctx.DistanceBetween < 0.01f);
     }
     
     protected abstract Vector3 GetEndPoint();

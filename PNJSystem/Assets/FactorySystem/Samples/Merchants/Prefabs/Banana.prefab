@@ -110,7 +110,9 @@ MonoBehaviour:
   factory:
     rid: -2
   outputObjects: []
-  itemData: {fileID: 11400000, guid: e08da48d5f919cc448c36f4eb1f30f4d, type: 2}
+  waitingLayoutContainer: {fileID: 0}
+  itemUIPrefab: {fileID: 0}
+  itemData: {fileID: 11400000, guid: e3bda0fccbe60a04caad97b740865bd5, type: 2}
   references:
     version: 2
     RefIds:
